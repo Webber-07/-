@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медик - Ваш помощник в выборе лекарств</title>
+    <link rel="stylesheet" href="computerclub.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="header">
+        <h1>Медик</h1>
+        <nav>
+            <a href="#popular">Популярные препараты</a>
+            <a href="#antibiotics">Антибиотики</a>
+            <a href="#medical-supplies">Медицинские материалы</a>
+            <a href="#antiseptics">Антисептики</a>
+            <a href="#order">Как заказать</a>
+            <a href="#delivery">Доставка</a>
+            <a href="#contacts">Контакты</a>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Корзина" width="30" height="30">
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Блок 1: Главная -->
+        <div class="block">
+            <h2>Главная</h2>
+            <div class="main-content">
+                <div class="main-text">
+                    <p>Мы — ваш надежный помощник в выборе лекарственных препаратов. Наша цель — обеспечить вас качественными и доступными лекарствами. У нас вы найдете широкий ассортимент препаратов для улучшения вашего здоровья.</p>
+                    <p>Почему выбирают нас?</p>
+                    <ul>
+                        <li>Качественные препараты от проверенных поставщиков.</li>
+                        <li>Быстрая доставка по всей стране.</li>
+                        <li>Акции и скидки для постоянных клиентов.</li>
+                        <li>Круглосуточная поддержка по телефону и в чате.</li>
+                    </ul>
+                    <a href="#popular" class="button">Популярные препараты</a>
+                </div>
+                <div class="main-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                        <!-- Круг -->
+                        <circle cx="100" cy="100" r="90" fill="#8A2BE2" stroke="#6A5ACD" stroke-width="5" />
+
+                        <!-- Крест -->
+                        <rect x="85" y="60" width="30" height="80" fill="#28A745" />
+                        <rect x="60" y="85" width="80" height="30" fill="#007BFF" />
+
+                        <!-- Листья -->
+                        <path d="M100 150 C120 130, 140 150, 100 180 Z" fill="#007BFF" />
+                        <path d="M100 150 C80 130, 60 150, 100 180 Z" fill="#28A745" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 2: Популярные препараты -->
+        <div class="block" id="popular">
+            <h2>Популярные препараты</h2>
+            <div class="image-list">
+                <div>
+                    <img src="https://asevalar.ru/upload/iblock/770/770d2b4310d45fc3701660c8644f8a84_1920_1080.jpg" alt="Парацетамол">
+                    <p><strong>Парацетамол</strong> — жаропонижающее и обезболивающее средство. <span class="price">Цена: 150 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Парацетамол" data-price="150">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://aptekabm.ru/upload/iblock/3a9/3a98c4fc36314d77b2e01d4adc944166.png" alt="Ибуклин">
+                    <p><strong>Ибуклин</strong> — эффективное средство от боли и воспалений. <span class="price">Цена: 200 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Ибуклин" data-price="200">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://superapteka.ru/er-pics/images/goods/341115/main" alt="Амброксол">
+                    <p><strong>Амброксол</strong> — отхаркивающее средство для лечения заболеваний дыхательных путей. <span class="price">Цена: 250 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Амброксол" data-price="250">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://avatars.mds.yandex.net/i?id=455244b2be59ee901613369f109bebd5_l-10414794-images-thumbs&n=13" alt="Витамин С">
+                    <p><strong>Витамин С</strong> — укрепляет иммунитет и улучшает общее состояние организма. <span class="price">Цена: 300 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Витамин С" data-price="300">Добавить в корзину</a>
+                </div>
+                <!-- Новые препараты -->
+                <div>
+                    <img src="https://cdn.fishki.net/upload/post/2017/02/26/2228422/tn/aspirin-sredstvo-mnogocelevoe.jpg" alt="Аспирин">
+                    <p><strong>Аспирин</strong> — антиагрегант и обезболивающее средство. <span class="price">Цена: 180 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Аспирин" data-price="180">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://ozerki.ru/er-pics/images/goods/83793/main" alt="Нурофен">
+                    <p><strong>Нурофен</strong> — эффективное средство от боли и воспалений. <span class="price">Цена: 220 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Нурофен" data-price="220">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://ozerki.ru/er-pics/images/goods/90859/main" alt="Цитрамон">
+                    <p><strong>Цитрамон</strong> — комбинированное средство для снятия боли и жара. <span class="price">Цена: 120 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Цитрамон" data-price="120">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://asevalar.ru/upload/iblock/20f/20f4188a4b8ea82aa301004b5d268dee_1920_1080.jpg" alt="Антигриппин">
+                    <p><strong>Антигриппин</strong> — средство для профилактики и лечения гриппа. <span class="price">Цена: 350 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Антигриппин" data-price="350">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 3: Антибиотики -->
+        <div class="block" id="antibiotics">
+            <h2>Антибиотики</h2>
+            <div class="image-list">
+                <div>
+                    <img src="https://samson-pharma.ru/_next/image/?url=https%3A%2F%2Fpics.erkapharm.com%2Fimages%2Fgoods%2F349653%2Fmain.jpg&w=1024&q=75" alt="Амоксициллин">
+                    <p><strong>Амоксициллин</strong> — антибиотик широкого спектра действия. <span class="price">Цена: 400 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Амоксициллин" data-price="400">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://avatars.mds.yandex.net/i?id=870a8c26694769a58e2401dee49bdfb1e737824b-5190189-images-thumbs&n=13" alt="Доксициклин">
+                    <p><strong>Доксициклин</strong> — антибиотик для лечения бактериальных инфекций. <span class="price">Цена: 500 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Доксициклин" data-price="500">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://sc.api.megapteka.ru/items/79/bf/0da368fa752700469216c6e622a9bdb9e42d626ccb15066757c991d818647e28-cmpr.jpg" alt="Эритромицин">
+                    <p><strong>Эритромицин</strong> — антибиотик для лечения инфекций дыхательных путей. <span class="price">Цена: 550 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Эритромицин" data-price="550">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://fb.ru/misc/i/gallery/22562/3456072.jpg" alt="Азитромицин">
+                    <p><strong>Азитромицин</strong> — антибиотик для лечения инфекций, включая ОРВИ. <span class="price">Цена: 600 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Азитромицин" data-price="600">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 4: Медицинские материалы -->
+        <div class="block" id="medical-supplies">
+            <h2>Медицинские материалы</h2>
+            <div class="image-list">
+                <div>
+                    <img src="https://vseapteki.ru/cropping/thumbnails/101/71639/share_default/" alt="Бинты">
+                    <p><strong>Бинты</strong> — медицинские бинты для перевязок. <span class="price">Цена: 100 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Бинты" data-price="100">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://media.komus.ru/medias/sys_master/root/hcb/h5f/9990328975390/570040-1-800Wx800H.jpg" alt="Вата">
+                    <p><strong>Вата</strong> — медицинская вата для обработки ран. <span class="price">Цена: 50 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Вата" data-price="50">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://cdn1.ozone.ru/s3/multimedia-8/6105092468.jpg" alt="Пинцеты">
+                    <p><strong>Пинцеты</strong> — медицинские пинцеты для обработки ран. <span class="price">Цена: 150 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Пинцеты" data-price="150">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://www.ofsi.ru/upload/pictureFromCsv/SavedPicture/1269178_001_10.jpg" alt="Ножницы">
+                    <p><strong>Ножницы</strong> — медицинские ножницы для перевязок. <span class="price">Цена: 200 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Ножницы" data-price="200">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 5: Антисептики -->
+        <div class="block" id="antiseptics">
+            <h2>Антисептики</h2>
+            <div class="image-list">
+                <div>
+                    <img src="https://imgproxy.sbermarket.ru/imgproxy/size-680-680/czM6Ly9jb250ZW50LWltYWdlcy1wcm9kL3Byb2R1Y3RzLzE4MTE3OTk5L29yaWdpbmFsLzEvMjAyMi0wOC0yM1QxMSUzQTIwJTNBMDkuNTQ4MDAwJTJCMDAlM0EwMC8xODExNzk5OV8xLmpwZw==.jpg" alt="Хлоргексидин">
+                    <p><strong>Хлоргексидин</strong> — антисептик для обработки ран. <span class="price">Цена: 250 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Хлоргексидин" data-price="250">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://sc.api.megapteka.ru/items/40/a5/91f6e459d97299709be95e92b9bf86b70541c7dee7a0bf0049dbe85c36e93e0b-cmpr.jpg" alt="Йод">
+                    <p><strong>Йод</strong> — антисептик для обработки ран. <span class="price">Цена: 150 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Йод" data-price="150">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://samson-pharma.ru/er-pics/images/goods/62448/main" alt="Перекись водорода">
+                    <p><strong>Перекись водорода</strong> — антисептик для обработки ран. <span class="price">Цена: 100 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Перекись водорода" data-price="100">Добавить в корзину</a>
+                </div>
+                <div>
+                    <img src="https://tinytoy.kz/upload/iblock/7c8/7c8c9b73eb3107e9b97b9f88e54e878a.jpg" alt="Спирт">
+                    <p><strong>Спирт</strong> — антисептик для обработки кожи. <span class="price">Цена: 50 руб.</span></p>
+                    <a href="#" class="add-to-cart" data-name="Спирт" data-price="50">Добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 6: Как заказать -->
+        <div class="block" id="order">
+            <h2>Как заказать</h2>
+            <div style="position: relative; padding-right: 220px;">
+                <img src="https://as2.ftcdn.net/v2/jpg/01/83/49/31/1000_F_183493103_zDLgAlXGQlUugj7DAwKJYM7Gdm8fyADo.jpg" alt="Как заказать" style="position: absolute; top: 0; right: 0; max-width: 200px; margin-bottom: 20px;">
+                <p>Заказать лекарства у нас очень просто:</p>
+                <ol>
+                    <li>Выберите нужные препараты на нашем сайте.</li>
+                    <li>Добавьте их в корзину.</li>
+                    <li>Оформите заказ, указав ваши контактные данные.</li>
+                    <li>Ожидайте звонка нашего оператора для подтверждения заказа.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Блок 7: Доставка -->
+        <div class="block" id="delivery">
+            <h2>Доставка</h2>
+            <div style="position: relative; padding-right: 220px;">
+                <img src="https://avatars.mds.yandex.net/get-ydo/9710801/2a00000189a4e3aa365d57d67fc7f40dd8b7/diploma" alt="Доставка" style="position: absolute; top: 0; right: 0; max-width: 200px; margin-bottom: 20px;">
+                <p>Мы предлагаем быструю и удобную доставку лекарств:</p>
+                <ul>
+                    <li>Бесплатная доставка при заказе от 1000 рублей.</li>
+                    <li>Возможность самовывоза из ближайшей аптеки.</li>
+                    <li>Курьерская доставка в течение 1-2 дней.</li>
+                </ul>
+                <a href="#cart-block" class="order-button">Перейти в корзину</a>
+            </div>
+        </div>
+
+        <!-- Блок 8: О нас -->
+        <div class="block" id="about-us">
+            <h2>О нас</h2>
+            <p>Мы — команда профессионалов, которая стремится обеспечить вас качественными лекарствами и медицинскими материалами. У нас вы найдете широкий ассортимент препаратов для улучшения вашего здоровья.</p>
+            <p>Следите за нами в социальных сетях:</p>
+            <div class="social-links">
+                <a href="@webber_07" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="30" height="30">
+                    Telegram
+                </a>
+                <a href="https://youtu.be/xvFZjo5PgG0" target="_blank">
+                    <img src="https://cdn-edge.kwork.ru/pics/t3/33/14649429-1621696181.jpg" alt="YouTube" width="30" height="30">
+                    YouTube
+                </a>
+            </div>
+        </div>
+
+        <!-- Корзина -->
+        <div class="cart-block" id="cart-block">
+            <h2>Корзина</h2>
+            <ul class="cart-items"></ul>
+            <p>Общая стоимость: <span class="total-price">0 руб.</span></p>
+            <a href="#" class="order-button">Оформить заказ</a>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <div class="footer">
+        <p>&copy; 2025 Медик. Все права защищены.</p>
+    </div>
+
+    <script>
+        // JavaScript для управления корзиной
+        let cartCount = 0;
+        let totalPrice = 0;
+        const cartItems = [];
+
+        // Функция для обновления количества товаров в корзине
+        function updateCartCount() {
+            document.querySelector('.cart-count').textContent = cartCount;
+        }
+
+        // Функция для обновления корзины
+        function updateCart() {
+            const cartItemsList = document.querySelector('.cart-items');
+            cartItemsList.innerHTML = '';
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - ${item.price} руб.`;
+                cartItemsList.appendChild(li);
+            });
+            document.querySelector('.total-price').textContent = `${totalPrice} руб.`;
+        }
+
+        // Обработчик события для кнопок "Добавить в корзину"
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Предотвращаем переход по ссылке
+                const name = button.getAttribute('data-name');
+                const price = parseInt(button.getAttribute('data-price'));
+                cartCount++; // Увеличиваем количество товаров в корзине
+                totalPrice += price; // Увеличиваем общую стоимость
+                cartItems.push({ name, price }); // Добавляем товар в массив
+                updateCartCount(); // Обновляем отображение количества
+                updateCart(); // Обновляем отображение корзины
+            });
+        });
+
+        // Функция для управления видимостью корзины
+        function toggleCartVisibility() {
+            const cartBlock = document.getElementById('cart-block');
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('showCart')) {
+                cartBlock.style.display = 'block';
+            } else {
+                cartBlock.style.display = 'none';
+            }
+        }
+
+        // Вызов функции для управления видимостью корзины при загрузке страницы
+        toggleCartVisibility();
+    </script>
+</body>
+</html>
